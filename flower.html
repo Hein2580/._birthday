@@ -22,7 +22,7 @@
         .drop {
             background: #00f;
             width: 1px;
-            height: 89px;
+            height: 10vh;
             position: absolute;
             bottom: 100%;
             animation: fall linear infinite;
@@ -33,14 +33,14 @@
             }
         }
         .moon {
-            width: 100px;
-            height: 100px;
+            width: 8vw;
+            height: 8vw;
             background-color: #fff;
             border-radius: 50%;
             position: fixed;
-            top: 10%;
-            right: 10%;
-            box-shadow: 0 0 50px 10px #fff;
+            top: 5%;
+            right: 5%;
+            box-shadow: 0 0 5vw 2vw #fff;
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
@@ -74,6 +74,16 @@
             }
             20% {
                 opacity: 0;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .moon {
+                width: 15vw;
+                height: 15vw;
+                box-shadow: 0 0 10vw 4vw #fff;
+            }
+            .rain .drop {
+                height: 15vh;
             }
         }
     </style>
